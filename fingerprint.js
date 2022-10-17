@@ -150,9 +150,9 @@ class FingerPrint {
     setCookie(name, data = null) {
         if (!data) {
             let session_id = Math.random().toString(12).substr(2, 15);
-            document.cookie = `${name}=${session_id};max-age=3600;path=null;domain=.dengimigom.ru`
+            document.cookie = `${name}=${session_id};max-age=3600;path=null`
         } else {
-            document.cookie = `${name}=${data};max-age=3600;path=null;domain=.dengimigom.ru`
+            document.cookie = `${name}=${data};max-age=3600;path=null`
         }
     }
 
